@@ -1,0 +1,161 @@
+/*global styling - choosing to hide horizontal scroll bar*/
+html{
+overflow-y: scroll;
+overflow-x: hidden;
+font-size: 16px;
+
+}
+
+/*makes body full width*/
+body { 
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/mexicanrose.jpg");
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
+}
+
+/*font stack for p and a tags*/
+p, a{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+/*styling to center nav bar*/
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    color: white;
+}
+
+footer{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    height: 100px;
+}
+
+/*my sections are numbered 1-4.
+1- welcome
+2- about
+3- career
+4- hobbies
+
+the below sections style by odd and even. ex: sections 1 and 3 get the .oddSections styles.
+*/
+
+.oddSections{
+   height: auto; 
+   background-color: white;
+   overflow:hidden;
+}
+
+.about{
+    background-image: url("../images/hobbie3.jpg");    
+}
+
+.career{
+color: white;
+background-color: #242424;
+background-image: url("../images/bg/careerbg.jpg");
+background-attachment: fixed;
+background-position: center;
+}
+
+.evenSections{
+    height: auto; 
+    overflow:hidden;
+}
+
+.hobbies{
+    background-image: url("../images/redtile.jpg");
+    background-color: white;
+}
+
+.headerContainer{
+}
+
+/*styling for Robertos name*/
+.headingStyle{
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-weight: 700;
+    font-size: 4.768em;
+    color: black;
+}
+
+/*styling for section headings*/
+.headingStyle2{
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-weight: 700;
+    font-size: 3.052em;
+}
+
+/*styling for card headings under hobbies*/
+.cardheadings{
+    font-family: 'Permanent Marker', cursive, sans-serif !important;
+    font-weight: 700;
+    font-size: 1.953em;
+}
+
+/*basic h1 major thirds type scale at 1.25*/
+h1{
+    font-weight: 700;
+    font-size: 3.052em;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 500;
+    font-size: 2.441em;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.953em;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1.563em;
+    text-transform: uppercase;
+    margin: 0px; 
+    padding-bottom: .5em;
+}
+
+h5{
+    font-size: 1.25em;
+}
+
+h6{
+    font-size: 1em;
+}
+
+/*centering for the timeline and about images*/
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ /*custom styling for the "back to top" button at the bottom of the page*/
+ .acustom{
+    font-family: 'Permanent Marker', cursive !important;
+    font-weight: 700;
+    font-size: 1em;
+    color: black;
+ }
+ /*custom styling for the "back to top" button at the bottom of the page*/
+ .acustom:hover{
+    text-decoration: none;
+    color: red;
+ }
+
+ .test{
+     color: red;
+ }
