@@ -16,6 +16,10 @@ body {
     transition: 2s opacity;
 }
 
+img{
+    width:auto;
+}
+
 body.fade {
     opacity: 0;
     transition: none;
@@ -26,6 +30,7 @@ p, a{
     font-family: 'Open Sans', sans-serif !important;
 }
 
+
 /*styling to center nav bar*/
 .navbar-nav.navbar-center {
     position: absolute;
@@ -34,10 +39,15 @@ p, a{
     color: white;
 }
 
+nav{
+    font-weight: 700;
+}
+
+
 footer{
     background-color: rgb(85, 85, 85);
     color: white;
-    height: 100px;
+    height: 6em;
 }
 
 /*my sections are numbered 1-4.
@@ -77,12 +87,10 @@ background-position: center;
     background-color: white;
 }
 
-.headerContainer{
-}
 
 /*styling for Robertos name*/
 .headingStyle{
-    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-family: 'Permanent Marker','Open Sans', sans-serif;
     font-weight: 700;
     font-size: 4.768em;
     color: black;
@@ -90,14 +98,14 @@ background-position: center;
 
 /*styling for section headings*/
 .headingStyle2{
-    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-family: 'Permanent Marker','Open Sans', sans-serif;
     font-weight: 700;
     font-size: 3.052em;
 }
 
 /*styling for card headings under hobbies*/
 .cardheadings{
-    font-family: 'Permanent Marker', cursive, sans-serif !important;
+    font-family: 'Permanent Marker', 'Open Sans', sans-serif !important;
     font-weight: 700;
     font-size: 1.953em;
 }
@@ -106,6 +114,10 @@ background-position: center;
 h1{
     font-weight: 700;
     font-size: 3.052em;
+}
+
+p{
+    font-weight: 625;
 }
 
 h2{
@@ -136,6 +148,19 @@ h6{
     font-size: 1em;
 }
 
+/*styling for each sections heading title - representing mexican flag colors*/
+.first{
+    color: #CE1126;
+}
+
+.second{
+    color: white;
+}
+
+.third{
+    color:#006847;
+}
+
 /*centering for the timeline and about images*/
 .center-block {
     display: block;
@@ -159,3 +184,45 @@ h6{
  .test{
      color: red;
  }
+
+
+
+/*align fig captions to the center, just like the rest of page content*/
+figcaption{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.container {
+    position: relative;
+  }
+
+.overlay {
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .4s ease-out;
+  background-color: white;
+  }
+
+  .container:hover .overlay {
+    opacity: .85;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
