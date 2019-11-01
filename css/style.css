@@ -228,7 +228,7 @@ position: absolute;
   }
 
 /*hide one emjoi when the screen gets smaller*/
-  @media (max-width:629px) {
+  @media (max-width:800px) {
     .imgHide {
       display: none;
     }
